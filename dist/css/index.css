@@ -73,17 +73,26 @@ body {
   height: 40px;
   background: #cf3340;
   font-size: 16px;
-  line-height: 40px;
   color: #FFFFFF;
-  z-index: 10;
+  position: absolute;
+  padding: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .nav .nav-item {
-  z-index: 100;
+  float: left;
 }
 
 .nav .nav-item .item-title {
   cursor: pointer;
+  position: absolute;
+  top: 0;
+  border-right: 1px solid #a22727;
+  padding-right: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 10px;
 }
 
 .nav .nav-item .item-title span {
@@ -96,12 +105,16 @@ body {
   height: 0;
   border: 8px solid transparent;
   border-top: 10px solid white;
-  margin-top: 16px;
+  margin-top: 4px;
   margin-left: 12px;
 }
 
 .nav .nav-item .item-content {
-  width: 284px;
   height: 177px;
   border: 1px solid #000;
+  position: absolute;
+  top: 40px;
+  color: #000;
+  text-align: center;
+  display: none;
 }
