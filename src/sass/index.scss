@@ -39,7 +39,7 @@ body {
       margin-right: 10px;
       color: #333333;
       &:hover {
-        color: #4b4dff;
+        color: #dc1236;
       }
       .icon {
         width: 32px;
@@ -104,12 +104,14 @@ body {
       //border: 1px solid #000;
       background: #FFFFFF;
       position: absolute;
-      top: 40px;
+      top: 36px;
       color: #000;
       font-size: 16px;
       padding-top: 22px;
       padding-left: 25px;
+      border-radius: 2px;
       box-sizing: border-box;
+      margin-left: -6px;
       /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
       box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
       .text {
@@ -148,180 +150,132 @@ body {
   }
 }
 
-/*二级建造师工程法规哪个老师好*/
+
 .constructor {
   margin-top: 40px;
   padding-top: 32px;
   box-sizing: border-box;
-  .constructor-h2 {
-    font-size: 20px;
-    line-height: 26px;
-    //margin-bottom: 23px;
-    .icon {
-      width: 27px;
-      height: 27px;
-      margin-right: 10px;
-      float: left;
-      &.tea {
-        background: url("../images/icon/avatar_01.png") no-repeat;
-      }
-      &.kecheng {
-        background: url("../images/icon/test_play.png") no-repeat;
-      }
+}
+
+/*二级建造师工程法规哪个老师好*/
+.constructor-h2 {
+  font-size: 20px;
+  line-height: 26px;
+  //margin-bottom: 23px;
+  .icon {
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+    float: left;
+    &.tea {
+      background: url("../images/icon/avatar_01.png") no-repeat;
     }
-    .text {
+    &.kecheng {
+      background: url("../images/icon/test_play.png") no-repeat;
+    }
+  }
+  .text {
+    font-weight: bold;
+    color: #444444;
+    strong {
+      color: #cf3340;
       font-weight: bold;
-      color: #444444;
-      strong {
-        color: #cf3340;
-        font-weight: bold;
-      }
     }
   }
-  .teacher {
-    border: 1px solid #e6e6e6;
-    padding: 18px 16px;
+}
+.teacher {
+  border: 1px solid #e6e6e6;
+  padding: 18px 16px;
+  box-sizing: border-box;
+  margin-top: 32px;
+  margin-bottom: 27px;
+  .audition {
+    background: #e22144;
+    border-radius: 18px;
+    float: right;
+    margin-top: -36px;
+    margin-right: 26px;
+    padding: 0 12px;
     box-sizing: border-box;
-    margin-top: 32px;
-    margin-bottom: 27px;
-    .audition {
-      background: #e22144;
-      border-radius: 18px;
-      float: right;
-      margin-top: -36px;
-      margin-right: 26px;
-      padding: 0 12px;
-      box-sizing: border-box;
-      .icon {
-        width: 21px;
-        height: 17px;
-        background: url("../images/icon/audition.png") no-repeat;
-        float: left;
-        margin-top: 9px;
-        margin-right: 5px;
-      }
-      span {
-        font-size: 18px;
+    .icon {
+      width: 21px;
+      height: 17px;
+      background: url("../images/icon/audition.png") no-repeat;
+      float: left;
+      margin-top: 9px;
+      margin-right: 5px;
+    }
+    span {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 36px;
+      color: #FFFFFF;
+    }
+  }
+  .vs {
+    height: 55px;
+    margin-top: -52px;
+    background: url("../images/icon/vs.png") no-repeat center;
+  }
+  .tea-logo {
+    width: 170px;
+    height: 200px;
+    background: url("../images/bg/wangsj_01.png") no-repeat;
+    margin-right: 25px;
+    float: left;
+  }
+  .tea-content {
+    float: left;
+    width: 78%;
+    .cont-title {
+      .username {
+        border-left: 4px solid #dc1236;
+        padding-left: 10px;
+        box-sizing: border-box;
         font-weight: bold;
-        line-height: 36px;
-        color: #FFFFFF;
-      }
-    }
-    .vs {
-      height: 55px;
-      margin-top: -52px;
-      background: url("../images/icon/vs.png") no-repeat center;
-    }
-    .tea-logo {
-      width: 170px;
-      height: 200px;
-      background: url("../images/bg/wangsj_01.png") no-repeat;
-      margin-right: 25px;
-      float: left;
-    }
-    .tea-content {
-      float: left;
-      width: 78%;
-      .cont-title {
-        span {
-          border-left: 4px solid #dc1236;
-          padding-left: 10px;
-          box-sizing: border-box;
-          font-weight: bold;
-          font-size: 20px;
-          line-height: 26px;
-        }
-      }
-      .cont-item {
-        margin-top: 18px;
+        font-size: 20px;
         line-height: 26px;
-        float: left;
-        width: 100%;
-        .item-key {
-          color: #dc1236;
-          background: #ffdbe1;
-          padding: 0 10px;
-          box-sizing: border-box;
-          float: left;
-          border-radius: 5px;
-          margin-right: 12px;
-        }
-        .item-val {
-          float: left;
-          //border: 1px solid #000;
-          width: 86%;
-        }
+        color: #444444;
       }
     }
-    &:nth-of-type(2n) {
-      .audition {
-        background: #7ec252;
-      }
-    }
-  }
-
-  /*课程*/
-  .curricula {
-    border: 1px solid #e6e6e6;
-    margin-top: 26px;
-    .curricula-row {
-      .curricula-title {
-        width: 100%;
-        font-size: 18px;
-        color: #FFFFFF;
-        font-weight: bold;
-        margin-top: 20px;
-        margin-bottom: 18px;
-        clear: both;
-        span {
-          padding: 0 15px 0 20px;
-          box-sizing: border-box;
-          background-image: linear-gradient(to right, #f24a69, #dc1337);
-          border-top-right-radius: 18px;
-          border-bottom-right-radius: 18px;
-          line-height: 36px;
-          display: inline-block;
-        }
-      }
-      .curricula-item {
-        width: 230px;
+    .cont-item {
+      margin-top: 18px;
+      line-height: 26px;
+      float: left;
+      width: 100%;
+      .item-key {
+        color: #dc1236;
+        background: #ffdbe1;
+        padding: 0 10px;
+        box-sizing: border-box;
         float: left;
-        margin-left: 14px;
-        margin-bottom: 15px;
-        .item-bg {
-          width: 230px;
-          height: 140px;
-          background: url("../images/bg/wangsj_02.png") no-repeat;
-        }
-        .item-detail {
-          font-size: 16px;
-          color: #444444;
-          text-align: center;
-          line-height: 60px;
-        }
-        &:hover {
-          box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
-          box-sizing: border-box;
-        }
+        border-radius: 5px;
+        margin-right: 12px;
       }
-      &:nth-of-type(2n) {
-        .curricula-item {
-          .item-bg {
-            background: url("../images/bg/wangsj_03.png") no-repeat;
-          }
-        }
-        .curricula-title {
-          span {
-            background: #7ec252;
-          }
+      .item-val {
+        float: left;
+        //border: 1px solid #000;
+        width: 86%;
+        a{
+          display: inline;
+          color: #666666;
         }
       }
     }
   }
+  &:nth-of-type(2n) {
+    .audition {
+      background: #7ec252;
+    }
+  }
+}
 
-  /*评价*/
-  .evaluate {
-    .evaluate-title {
+/*课程*/
+.curricula {
+  border: 1px solid #e6e6e6;
+  margin-top: 26px;
+  .curricula-row {
+    .curricula-title {
       width: 100%;
       font-size: 18px;
       color: #FFFFFF;
@@ -339,98 +293,163 @@ body {
         display: inline-block;
       }
     }
-    .evaluate-top {
-      .top-item {
-        width: 33.33%;
-        //height: 187px;
-        border: 1px solid #e6e6e6;
-        padding: 23px 18px;
-        box-sizing: border-box;
-        float: left;
-        .avatar {
-          width: 47px;
-          height: 47px;
-          background: url("../images/icon/avatar_02.png") no-repeat;
-          float: left;
-          margin-right: 15px;
-        }
-        .text {
-          font-size: 14px;
-          float: left;
-          width: 78%;
-          line-height: 24px;
-          .username {
-            color: #dd1237;
-          }
-        }
-        &:nth-of-type(2n) {
-          border-left: 1px solid transparent;
-          border-right: 1px solid transparent;
-        }
-        &:hover {
-          border: 1px solid #e2727f;
-        }
-        &:nth-of-type(2) {
-          .avatar {
-            background: url("../images/icon/avatar_03.png") no-repeat;
-          }
-        }
-        &:nth-of-type(3) {
-          .avatar {
-            background: url("../images/icon/avatar_04.png") no-repeat;
-          }
-        }
+    .curricula-item {
+      width: 230px;
+      float: left;
+      margin-left: 14px;
+      margin-bottom: 15px;
+      .item-bg {
+        width: 230px;
+        height: 140px;
+        background: url("../images/bg/wangsj_02.png") no-repeat;
       }
-    }
-    .evaluate-bottom {
-      padding: 18px 20px;
-      box-sizing: border-box;
-      border: 1px solid #e6e6e6;
-      border-top: 1px solid transparent;
-      .bottom-item {
-        padding-top: 10px;
-        padding-bottom: 12px;
-        border-bottom: 1px dashed #999999;
+      .item-detail {
+        font-size: 16px;
+        color: #444444;
+        text-align: center;
+        line-height: 60px;
+      }
+      &:hover {
+        box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
-        .avatar {
-          width: 47px;
-          height: 47px;
-          background: url("../images/icon/avatar_02.png") no-repeat;
-          float: left;
-          margin-right: 15px;
-        }
-        .text {
-          font-size: 14px;
-          float: left;
-          width: 92%;
-          line-height: 24px;
-        }
-        &:nth-of-type(2) {
-          .avatar {
-            background: url("../images/icon/avatar_06.png") no-repeat;
-          }
-        }
-        &:nth-of-type(3) {
-          .avatar {
-            background: url("../images/icon/avatar_07.png") no-repeat;
-          }
-        }
-        &:nth-of-type(4) {
-          .avatar {
-            background: url("../images/icon/avatar_08.png") no-repeat;
-          }
-        }
-
-        &:last-child {
-          border-bottom: 1px solid transparent;
-        }
       }
     }
     &:nth-of-type(2n) {
-      .evaluate-title {
-        span {
-          //background: #7ec252;
+      .curricula-item {
+        .item-bg {
+          background: url("../images/bg/wangsj_03.png") no-repeat;
         }
+      }
+      .curricula-title {
+        span {
+          background: #7ec252;
+        }
+      }
+    }
+  }
+}
+
+/*评价*/
+.evaluate {
+  .evaluate-title {
+    width: 100%;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    clear: both;
+    span {
+      padding: 0 15px 0 20px;
+      box-sizing: border-box;
+
+      border-top-right-radius: 18px;
+      border-bottom-right-radius: 18px;
+      line-height: 36px;
+      display: inline-block;
+    }
+    &.red{
+      span{
+        background-image: linear-gradient(to right, #f24a69, #dc1337);
+      }
+    }
+    &.green{
+      span{
+        background: #7ec252;
+      }
+    }
+  }
+  .evaluate-top {
+    .top-item {
+      width: 33.33%;
+      //height: 187px;
+      border: 1px solid #e6e6e6;
+      padding: 23px 18px;
+      box-sizing: border-box;
+      float: left;
+      .avatar {
+        width: 47px;
+        height: 47px;
+        background: url("../images/icon/avatar_02.png") no-repeat;
+        float: left;
+        margin-right: 15px;
+      }
+      .text {
+        font-size: 14px;
+        float: left;
+        width: 78%;
+        line-height: 24px;
+        .username {
+          color: #dd1237;
+        }
+      }
+      &:nth-of-type(2n) {
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+      }
+      &:hover {
+        border: 1px solid #e2727f;
+      }
+      &:nth-of-type(2) {
+        .avatar {
+          background: url("../images/icon/avatar_03.png") no-repeat;
+        }
+      }
+      &:nth-of-type(3) {
+        .avatar {
+          background: url("../images/icon/avatar_04.png") no-repeat;
+        }
+      }
+    }
+  }
+  .evaluate-bottom {
+    padding: 18px 20px;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    border-top: 1px solid transparent;
+    .bottom-item {
+      padding-top: 10px;
+      padding-bottom: 12px;
+      border-bottom: 1px dashed #999999;
+      box-sizing: border-box;
+      .avatar {
+        width: 47px;
+        height: 47px;
+        background: url("../images/icon/avatar_02.png") no-repeat;
+        float: left;
+        margin-right: 15px;
+      }
+      .text {
+        font-size: 14px;
+        float: left;
+        width: 92%;
+        line-height: 24px;
+      }
+      &:nth-of-type(2) {
+        .avatar {
+          background: url("../images/icon/avatar_06.png") no-repeat;
+        }
+      }
+      &:nth-of-type(3) {
+        .avatar {
+          background: url("../images/icon/avatar_07.png") no-repeat;
+        }
+      }
+      &:nth-of-type(4) {
+        .avatar {
+          background: url("../images/icon/avatar_08.png") no-repeat;
+        }
+      }
+
+      &:last-child {
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+  &:nth-of-type(2n) {
+    .evaluate-title {
+      span {
+        //background: #7ec252;
       }
     }
   }
@@ -450,13 +469,14 @@ body {
   margin-top: 36px;
   .msg-item{
     width: 318px;
-    height: 300px;
+    //height: 300px;
     border: 1px solid #e6e6e6;
-    padding-top: 20px;
     box-sizing: border-box;
     float: left;
     margin-right: 22px;
     .msg-title{
+      padding-top: 20px;
+      box-sizing: border-box;
       margin-bottom: 16px;
       p{
         font-size: 20px;
@@ -495,6 +515,9 @@ body {
         float: right;
         color: #999999;
         margin-left: 6px;
+      }
+      &:last-child{
+        margin-bottom: 10px;
       }
       &:hover{
         background: #e7e7e7;
@@ -543,6 +566,8 @@ body {
   }
   .subject-content{
     margin-top: 30px;
+    margin-left: -7px;
+    margin-right: -7px;
     .subject-item{
       font-size: 14px;
       padding: 0 18px;
@@ -574,8 +599,33 @@ body {
   .footer-container{
     width: 1260px;
     height: 38px;
-    border: 1px solid red;
+    //border: 1px solid red;
     margin-left: auto;
     margin-right: auto;
+    font-size: 14px;
+    .company{
+      float: left;
+      line-height: 38px;
+      color: #9f9e9e;
+    }
+    .footer-nav{
+      float: right;
+      padding-top: 12px;
+      box-sizing: border-box;
+      .nav-item{
+        float: left;
+        color: #9f9e9e;
+        border-right: 1px solid #666666;
+        padding-left: 12px;
+        padding-right: 12px;
+        box-sizing: border-box;
+        &:last-child{
+          border-right: 0;
+        }
+        &:hover{
+          color: #FFFFFF;
+        }
+      }
+    }
   }
 }
